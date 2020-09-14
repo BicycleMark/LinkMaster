@@ -11,8 +11,8 @@ namespace LinkMaster.Data
         bool SaveChanges();
         IEnumerable<Link> GetAllCommands();
         Link GetLinkById(int id);
-        void CreateLink(Link cmd);
-        void UpdateLink(Link cmd);
-        void DeleteLink(Link cmd);
+        void CreateLink(Link lnk);
+        void UpdateLink(Link lnk);
+        void DeleteLink(Link lnk);
     }
 }

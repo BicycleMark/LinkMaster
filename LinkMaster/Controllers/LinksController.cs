@@ -10,7 +10,7 @@ using LinkMaster.Model;
 
 namespace LinkMaster.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("links")]
     [ApiController]
     public class LinksController : ControllerBase
     {
