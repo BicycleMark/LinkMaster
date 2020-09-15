@@ -25,6 +25,7 @@ namespace LinkMaster.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Link>>> GetLinkData()
         {
+
             return await _context.LinkData.ToListAsync();
         }
 
@@ -39,7 +40,7 @@ namespace LinkMaster.Controllers
                 return NotFound();
             }
 
-            return link;
+            return Ok(link);
         }
 
         // PUT: api/Links/5

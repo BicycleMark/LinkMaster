@@ -13,7 +13,7 @@ namespace LinkMaster.Model
         public int Id { get; set; }
 
         [Required]
-        public Uri Uri { get; set; }
+        public String Uri { get; set; }
 
         [Required]
         public string Category  { get; set; }

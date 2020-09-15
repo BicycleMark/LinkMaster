@@ -9,7 +9,7 @@ namespace LinkMaster.Data
     public interface ILinkMasterRepo
     {
         bool SaveChanges();
-        IEnumerable<Link> GetAllCommands();
+        IEnumerable<Link> GetAllLinks();
         Link GetLinkById(int id);
         void CreateLink(Link lnk);
         void UpdateLink(Link lnk);
