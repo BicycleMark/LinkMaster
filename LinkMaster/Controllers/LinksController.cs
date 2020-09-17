@@ -1,4 +1,5 @@
-﻿using System;
+﻿//#define SECURED
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LinkMaster.Data;
 using LinkMaster.Model;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LinkMaster.Controllers
 {
@@ -23,6 +25,9 @@ namespace LinkMaster.Controllers
 
         // GET: api/Links
         [HttpGet]
+#if SECURED
+        [Authorize]
+#endif
         public async Task<ActionResult<IEnumerable<Link>>> GetLinkData()
         {
 
